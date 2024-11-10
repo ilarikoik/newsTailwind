@@ -9,6 +9,9 @@ const fetchNewestNews = async (category) => {
     );
     const result = await res.json();
     console.log(result.articles);
+    console.log(
+      `https://newsapi.org/v2/top-headlines?q=${category}&${APIANDKEY}`
+    );
     return result.articles;
   } catch (error) {
     console.log("Error fetching Newest top headlines " + error);
