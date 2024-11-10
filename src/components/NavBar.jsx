@@ -69,7 +69,7 @@ export default function NavBar({ titles, handlePress }) {
                           handlePress(item);
                           setOpened(false);
                         }}
-                        className="text-gray-800 hover:text-blue-600"
+                        className="text-gray-800 hover:text-blue-600 cursor-pointer"
                       >
                         {item}
                       </a>
