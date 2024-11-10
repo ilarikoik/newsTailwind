@@ -16,7 +16,7 @@ export default function NavBar({ titles, handlePress }) {
     "Science",
   ]);
   const [opened, setOpened] = useState(false);
-  const [keyword, setKeyword] = useState("");
+  const [keyword, setKeyword] = useState("Top");
 
   return (
     <>
