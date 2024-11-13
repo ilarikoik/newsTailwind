@@ -6,10 +6,10 @@ export default function Items({ items, itemClass, handlePress }) {
 
   return (
     <>
-      <div className="flex flew-row justify-center items-center w-full p-3 h-8 mt-4 bg-news-blue rounded-md left-0 ">
+      <div className="flex justify-center items-center p-2 h-8 mt-4 bg-news-blue rounded-md ">
         <input
           placeholder="Hae"
-          className="flex w-16 h-5 focus:outline-none mr-3 rounded-sm p-1 lg:w-18 xl:w-36"
+          className="flex w-full h-5 focus:outline-none mr-3 rounded-sm p-1"
           icon="search"
           onChange={(event) => setKeyword(event.target.value)}
         />

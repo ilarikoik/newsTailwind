@@ -22,11 +22,11 @@ export default function NavBar({ titles, handlePress }) {
     <>
       <div className="bg-white">
         <section className="flex flex-col items-center  bg-white max-h-fit md:flex-row">
-          <div className="flex flex-row w-full justify-around ">
+          <div className="flex flex-row justify-around w-full lg:w-1/6">
             <h3 className="flex w-32 p-5 rounded-2xl h-12 items-center bg-news-blue text-light-white font-extrabold text-4xl mt-5 justify-center md:ml-7">
               NEWS
             </h3>
-            <div>
+            <div className="flex justify-between">
               <div
                 onClick={() => setOpened(!opened)}
                 className={classNames(
@@ -80,11 +80,11 @@ export default function NavBar({ titles, handlePress }) {
             )}
           </div>
 
-          <ul className="p-5 hidden bg-white justify-around lg:flex flex-row mt-4">
+          <ul className=" p-5 hidden  bg-white lg:flex flex-row overflow-hidden w-full mt-4 justify-between ">
             {!opened && (
               <Items
                 items={menuItems}
-                itemClass="flex justify-center items-center h-8 w-fit m-3 p-2 text-news-blue font-bold underline cursor-pointer"
+                itemClass="flex justify-center items-center h-8 w-fit m-3 p-2 text-news-blue font-bold underline cursor-pointer "
                 handlePress={handlePress}
               />
             )}

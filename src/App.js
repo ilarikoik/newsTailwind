@@ -52,15 +52,17 @@ function App() {
       </p>
 
       {showChoice && (
-        <p
-          className="hidden lg:flex lg:justify-center cursor-pointer text-news-blue font-bold"
-          onClick={() => setCol(!col)}
-        >
-          Change layout
-          <ColumnWidthOutlined
-            style={{ fontSize: "30px", color: "#1890ff", marginLeft: "8px" }}
-          />
-        </p>
+        <div className="flex w-full justify-center">
+          <p
+            className="w-fit hidden lg:flex lg:justify-center cursor-pointer text-news-blue font-bold"
+            onClick={() => setCol(!col)}
+          >
+            Change layout
+            <ColumnWidthOutlined
+              style={{ fontSize: "30px", color: "#1890ff", marginLeft: "8px" }}
+            />
+          </p>
+        </div>
       )}
       {col ? (
         <Card
