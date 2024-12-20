@@ -20,18 +20,6 @@ export default function Test({ titles, handlePress }) {
   }, []);
 
   return (
-    <div className="opacity-0 transform translate-y-8 transition-opacity transition-transform duration-700 ease-out scroll-animation">
-      Tämä elementti näkyy scrollatessa. Tämä elementti näkyy scrollatessa. Tämä
-      <p>asdasdasdas</p>
-      <p>asdasdasdas</p>
-      <p>asdasdasdas</p>
-      <p>asdasdasdas</p>
-      <p>asdasdasdas</p>
-      <p>asdasdasdas</p>
-      <p>asdasdasdas</p>
-      <p>asdasdasdas</p>
-      <p>asdasdasdas</p>
-      <p>asdasdasdas</p>
-    </div>
+    <div className="opacity-0 transform translate-y-8 transition-opacity transition-transform duration-700 ease-out scroll-animation"></div>
   );
 }
