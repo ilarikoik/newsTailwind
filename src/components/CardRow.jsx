@@ -1,4 +1,6 @@
 export default function CardRow({ items, itemCon, itemh3, itemp }) {
+  //
+  //
   return (
     <div className="flex flex-wrap justify-evenly">
       {items.length > 0 &&
